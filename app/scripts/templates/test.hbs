@@ -1,0 +1,74 @@
+<div id="error-top" class="error top" style="display:none"></div>
+<div id="error-bottom" class="error bottom" style="display:none"></div>
+<h2>Реши пример:</h2>
+<div class="section">
+  <div class="fraction-container">
+    <div class="fraction">
+      <div class="numerator">{{numerator_first}}</div>
+      <hr class="line">
+      <div class="denominator">{{denominator_first}}</div>
+    </div>
+    <div class="operator-addition">+</div>
+    <div class="fraction">
+      <div class="numerator">{{numerator_second}}</div>
+      <hr class="line">
+      <div class="denominator">{{denominator_second}}</div>
+    </div>
+  </div>
+  <div class="operator-equal">=</div>
+  <div class="fraction-container">
+    <form id="first">
+      <div class="fraction">
+          <div class="numerator">{{numerator_first}}</div>
+          <div class="operator-multiplication">*</div>
+          <input id="numerator_first" class="field" type="text" value="" name="numerator_first" />
+          <hr class="line">
+          <div class="denominator">{{denominator_first}}</div>
+          <div class="operator-multiplication">*</div>
+          <input id="denominator_first" class="field novalid" type="text" value="" name="denominator_first" disabled />
+      </div>
+      <div class="operator-addition">+</div>
+      <div class="fraction">
+        <div class="numerator">{{numerator_second}}</div>
+        <div class="operator-multiplication">*</div>
+        <input id="numerator_second" class="field novalid" type="text" value="" name="numerator_second" disabled />
+        <hr class="line">
+        <div class="denominator">{{denominator_second}}</div>
+        <div class="operator-multiplication">*</div>
+        <input id="denominator_second" class="field novalid" type="text" value="" name="denominator_second" disabled />
+      </div>
+    </form>
+  </div>
+</div>
+<div id="section-first" class="section" style="display: none;">
+  <div class="operator-equal">=</div>
+  <div class="fraction-container">
+    <div class="fraction">
+      <input id="factorFirst" class="field novalid" type="text" value="" />
+      <hr class="line">
+      <input id="denomiratorGeneralFirst" class="field novalid" type="text" value="" disabled />
+    </div>
+    <div class="operator-addition">+</div>
+    <div class="fraction">
+      <input id="factorSecond" class="field novalid" type="text" value="" disabled />
+      <hr class="line">
+      <input id="denomiratorGeneralSecond" class="field novalid" type="text" value="" disabled />
+    </div>
+  </div>
+</div>
+<div id="section-finaly" class="section" style="display:none;">
+  <div class="operator-equal">=</div>
+  <div class="fraction-container">
+    <div class="fraction">
+      <input id="numeratorFinaly" class="field novalid" type="text" value="" disabled />
+      <hr class="line">
+      <input id="denominatorFinaly" class="field novalid" type="text" value="" disabled />
+    </div>
+  </div>
+</div>
+<div id="confirm" style="display:none;">
+  Хочешь другой пример?
+  <button id="yes">Да</button>
+  <button id="no">Нет</button>
+</div>
+
